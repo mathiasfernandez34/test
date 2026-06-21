@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Club de Vélo</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #111;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 360px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px 14px;
+      border: none;
+      border-radius: 10px;
+      background: #0d6efd;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inscription Test Club de Vélo</h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <!-- Remplacez YOUR_ACCESS_KEY_HERE par votre clé API de test Web3Forms -->
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+      <div class="form-group">
+        <label for="cyclistName">Nom du cycliste</label>
+        <input
+          id="cyclistName"
+          type="text"
+          name="name"
+          placeholder="Entrez votre nom"
+          required
+        >
+      </div>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</body>
+</html>
